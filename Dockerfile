@@ -1,4 +1,4 @@
-FROM golang:1.21.6
+FROM --platform=linux/amd64 golang:1.21.6
 LABEL authors="szymonwojdat"
 RUN apt-get update && apt-get install gcc libasound2-dev libgl1-mesa-dev xorg-dev python3 -y
 COPY . /app

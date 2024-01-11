@@ -23,7 +23,9 @@
       name: 'App',
       data: () => {
         return {
-          wsConn: new WebSocket("ws://127.0.0.1:1989/stream"),
+          // wsConn: new WebSocket("ws://127.0.0.1:1989/stream"),
+          // wsConn: new WebSocket("wss://host.docker.internal:1989/stream"),
+          wsConn: new WebSocket('wss://gbdotlive-ws-demo.onrender.com/stream'),
           input: "",
           imageURL: null,
           keys: {
