@@ -1,4 +1,4 @@
 build:
-	go get -t . && go build -o gbdotlive main.go
+	docker build -t gb .
 run:
-	./gbdotlive -S -r pokered.gb
+	docker run -p 8080:8080 -p 1989:1989 gb
